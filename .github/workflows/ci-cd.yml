@@ -97,7 +97,7 @@ jobs:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           tags: |
             type=sha,ref=latest
-            type=ref,event=branche
+            type=ref,event=branch
             latest
       - name: Build Docker Image
         uses: docker/build-push-action@v5
