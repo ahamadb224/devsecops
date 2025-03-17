@@ -139,7 +139,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: Setup Git config
         run: |
-          git config --global user.email "
+          git config --global user.email "github-actions@github.com"
           git config --global user.name "GitHub Actions"
       - name: Update Kubernetes deployment file
         env:
