@@ -59,7 +59,7 @@ jobs:
         run: npm ci
       - name: Build
         run: npm run build
-      -name: Archive_Build_Artifacts
+      - name: Archive_Build_Artifacts
         uses: actions/upload-artifact@v4
         with:
           name: build-artifacts
